@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block menu %}
+
+{% endblock %}
+
+{% block title %}
+    Добавление категории
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="box">
+
+           <form action="{% url 'category_add' %}" method="POST">
+                {% csrf_token%}
+
+                <div class="row text justify-content-center">
+                    <div class="col-5 text-center">
+                        <p class="descript">Добавьте категорию:</p>
+                        <input name="category_name" class="form-control id="category_name" placeholder="название категории">
+                         <textarea class="form-control" name="category_description" id="exampleFormControlTextarea1" rows="5" placeholder="описание"></textarea>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center">
+                        <button type="submit" class="btn btn-secondary btn-block">Добавить категорию</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
