@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 
-from market.views.tasks import index_view, product_view, add_category_view
+from market.views.tasks import index_view, product_view, add_category_view, add_product_view
 
 
 urlpatterns = [
@@ -9,6 +9,7 @@ urlpatterns = [
     path('', index_view, name='index'),
     # path('tasks/confirmation/<int:pk>', confirmation_view, name='delete_confirmation'),
     path('categories/add/', add_category_view, name='category_add'),
+    path('products/add/', add_product_view, name='product_add'),
     path('products/<int:pk>', product_view, name='product_detail'),
     # path('edit/', task_view, name='task_edit'),
     # path('tasks/edit/<int:pk>', task_edit_view, name='task_edit'),

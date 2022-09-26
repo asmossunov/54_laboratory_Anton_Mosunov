@@ -20,7 +20,7 @@ def product_view(request, pk):
 
 def add_category_view(request):
     if request.method == 'GET':
-        return render(request, 'add_task.html')
+        return render(request, 'category_add.html')
     return added_category_prepare(request)
 
 
@@ -34,3 +34,25 @@ def added_category_prepare(request):
     return redirect('index')
 
 
+def add_product_view(request):
+    if request.method == 'GET':
+        context = {
+            'categories': categories
+        }
+        return render(request, 'product_add.html', context)
+    return added_product_prepare(request)
+
+
+def added_product_prepare(request):
+    for category in categories:
+        if category == request.POST.get("category"):
+            category = category
+    product = Product.objects.create(
+        product_name=request.POST.get("product_name"),
+        product_description=request.POST.get("product_description"),
+        category=category,
+        price=request.POST.get("price"),
+        product_image=request.POST.get("product_image")
+    )
+    print(f'Добавлен новый продукт: {product.product_name}')
+    return redirect('index')
