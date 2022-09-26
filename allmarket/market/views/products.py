@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 
 from market.models import Category, Product
-from market.models import categories
+
 
 def index_view(request):
     if request.method == 'GET':
@@ -15,7 +15,7 @@ def index_view(request):
 
 def product_view(request, pk):
     product = get_object_or_404(Product, pk=pk)
-    return render(request, 'task.html', context={'product': product})
+    return render(request, 'product.html', context={'product': product})
 
 
 def add_category_view(request):
@@ -25,17 +25,18 @@ def add_category_view(request):
 
 
 def added_category_prepare(request):
+    products = Product.objects.all()
     category = Category.objects.create(
         category_name=request.POST.get("category_name"),
         category_description=request.POST.get("category_description")
     )
-    categories.append(category.category_name)
     print(f'Добавлена новая категория: {category.category_name}')
     return redirect('index')
 
 
 def add_product_view(request):
     if request.method == 'GET':
+        categories = Category.objects.all()
         context = {
             'categories': categories
         }
@@ -44,9 +45,8 @@ def add_product_view(request):
 
 
 def added_product_prepare(request):
-    for category in categories:
-        if category == request.POST.get("category"):
-            category = category
+    post_category = request.POST.get("category")
+    category = Category.objects.get(category_name=post_category)
     product = Product.objects.create(
         product_name=request.POST.get("product_name"),
         product_description=request.POST.get("product_description"),
@@ -55,4 +55,4 @@ def added_product_prepare(request):
         product_image=request.POST.get("product_image")
     )
     print(f'Добавлен новый продукт: {product.product_name}')
-    return redirect('index')
+    return redirect(reverse('product_detail', kwargs={'pk': product.pk}))

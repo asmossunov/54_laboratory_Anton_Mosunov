@@ -8,7 +8,7 @@ class StateChoices(TextChoices):
 
 
 # categories = ['продукты питания', 'бытовая техника', 'сад и огород']
-categories = []
+
 
 class Category(models.Model):
     category_name = models.CharField(verbose_name='Название', max_length=100, null=False)

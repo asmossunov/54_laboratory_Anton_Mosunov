@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 
-from market.views.tasks import index_view, product_view, add_category_view, add_product_view
+from market.views.products import index_view, product_view, add_category_view, add_product_view
 
 
 urlpatterns = [
