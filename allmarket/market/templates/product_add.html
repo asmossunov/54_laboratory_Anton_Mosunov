@@ -9,31 +9,35 @@
     <div class="container">
         <div class="box">
 
-           <form action="{% url 'task_add' %}" method="POST">
+           <form action="{% url 'product_add' %}" method="POST">
                 {% csrf_token%}
-                <p class="descript">Добавьте товар:</p>
+                <p class="descript text-center">Добавьте товар:</p>
                 <div class="row text justify-content-center">
                     <div class="col-7 text-center">
                         <input name="product_name" class="form-control id="product_name" placeholder="название товара">
                     </div>
+
                     <div class="col-7 text-center">
                         <input name="price" class="form-control id="price" placeholder="стоимость товара">
                     </div>
+
                     <div class="col-7 text-center">
                         <input name="product_image" class="form-control id="product_image" placeholder="ссылка на изображение">
                     </div>
 
-                    {% for category in categories %}
-                        <select class="form-select" aria-label="Default select example">
-                          <option value="{category}}">{{category}}</option>
+                    <div class="col-7 text-center">
+                        <select name="category", class="form-control">
+                        {% for category in categories %}
+                            <option value="{{category.category_name}}">{{category.category_name}}</option>
+                        {% endfor %}
                         </select>
-                    {% endfor %}
-                    <div class="col-5 text-center">
-                        <textarea class="form-control" name="task_description" id="exampleFormControlTextarea1" rows="5" placeholder="описание товара"></textarea>
+                    </div>
+                    <div class="col-7 text-center">
+                        <textarea class="form-control" name="product_description" id="exampleFormControlTextarea1" rows="5" placeholder="описание товара"></textarea>
                     </div>
 
                     <div class="col-10 text-center">
-                        <button type="submit" class="btn btn-secondary btn-block">Добавить продукт</button>
+                        <button type="submit" class="btn btn-secondary btn-block">Добавить товар</button>
                     </div>
                 </div>
 

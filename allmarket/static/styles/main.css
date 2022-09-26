@@ -5,7 +5,15 @@
 	background-size: 100%;
 	background-attachment: fixed;
 }
-
+.card-img-top{
+    width: 400px;
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+.p-3{
+    border-radius: 10px;
+}
 .box{
     width: 1300px;
     margin: auto auto 50px;
@@ -78,8 +86,11 @@
 }
 
 .descript{
-    margin-top: 57px;
-    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-size: 40px;
+    padding-top: 50px;
+
     color: #6ea9b9;
 }
 
@@ -169,6 +180,7 @@ body {
     font-size: 0;
     box-sizing: border-box;
     padding: 7px 30px;
+    margin-bottom: 100px;
 }
 
 .menu {

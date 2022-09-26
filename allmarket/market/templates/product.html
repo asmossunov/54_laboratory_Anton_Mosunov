@@ -7,14 +7,13 @@
 {% block content %}
     <div class="container">
         <div class="box">
-
             <div class="card">
-                <img class="card-img-left" src="{{% product.product_image %}}" alt="Card image cap">
+                <img class="card-img-left" src="{{ product.product_image }}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{% product.product_name %}}</h5>
-                    <p class="card-text">{{% product.category_name %}}</p>
-                    <p class="card-text">{{% product.price %}}</p>
-                    <span class="added">{{% product.created_at %}}</span>
+                    <h5 class="card-title">{{ product.product_name }}</h5>
+                    <p class="card-text">{{ product.category.category_name }}</p>
+                    <p class="card-text">{{ product.price }}</p>
+                    <span class="added">added:{{ product.created_at |date:'Y/m/d h:m' }}</span>
                 </div>
 
             </div>

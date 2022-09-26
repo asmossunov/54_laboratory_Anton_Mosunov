@@ -18,8 +18,11 @@
     <nav class="navbar">
        <div class="container">
            <ul class="menu">
-               <a class="navbar-link" href="{% url 'index' %}">ALLMarket</a>
-               <a class="navbar-link" href="{% url 'index' %}">Products</a>
+
+                    <a class="navbar-link" href="{% url 'index' %}"><i class="fa fa-home"></i> Домой</a>
+                    <a class="navbar-link" href="{% url 'index' %}">Продукты</a>
+                    <a class="navbar-link" href="{% url 'product_add' %}">Добавить продукт</a>
+                    <a class="navbar-link" href="{% url 'category_add' %}">Добавить категорию</a>
                {% block menu %}{% endblock %}
 
            </ul>
