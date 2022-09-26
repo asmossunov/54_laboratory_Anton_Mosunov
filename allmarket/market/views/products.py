@@ -20,10 +20,7 @@ def product_view(request, pk):
 
 def add_category_view(request):
     if request.method == 'GET':
-        context = {
-            'categories': categories
-        }
-        return render(request, 'add_task.html', context)
+        return render(request, 'add_task.html')
     return added_category_prepare(request)
 
 
@@ -35,3 +32,5 @@ def added_category_prepare(request):
     categories.append(category.category_name)
     print(f'Добавлена новая категория: {category.category_name}')
     return redirect('index')
+
+
