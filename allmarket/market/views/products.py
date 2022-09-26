@@ -11,3 +11,7 @@ def index_view(request):
             'products': products,
         }
         return render(request, 'index.html', context)
+
+def product_view(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, 'task.html', context={'product': product})
