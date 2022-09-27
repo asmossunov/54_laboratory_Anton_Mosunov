@@ -1,0 +1,671 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-09-26T08:43:30.515Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "техника бытовая техника",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-09-26T08:43:30.521Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "продукты питания ыВаываываяываы",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-09-26T10:23:23.111Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Хлеб продукты питания различные продукты питания 100.0000000000 ропаорпаорпаорп 2022-09-26 10:22:37.765436+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-09-26T10:23:23.116Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Хлеб продукты питания различные продукты питания 100.0000000000 ропаорпаорпаорп 2022-09-26 10:22:14.633709+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-09-26T10:23:23.120Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Хлеб продукты питания различные продукты питания 100.0000000000 ропаорпаорпаорп 2022-09-26 10:20:10.351210+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-09-26T10:23:23.125Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Хлеб продукты питания различные продукты питания 100.0000000000 ропаорпаорпаорп 2022-09-26 10:19:23.601674+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-09-26T10:23:23.129Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Хлеб продукты питания различные продукты питания 100.0000000000 ропаорпаорпаорп 2022-09-26 10:12:48.427438+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-09-26T11:48:34.004Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Телевизор техника различная бытовая техника 20000.0000000000 Телевизор ЖК 2022-09-26 11:46:54.054649+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-09-26T11:48:34.010Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Хлеб продукты питания различные продукты питания 100.0000000000 ропаорпаорпаорп 2022-09-26 10:39:16.740202+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-09-26T13:27:16.921Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Ведро сад и огород товары для сада и огорода 200.0000000000 Ведро оцинкованное 2022-09-26 13:25:07.687474+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 8,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 8,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 8,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 8,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$d1ZGrEs0TKdm1GRCjiTf8D$Pj2SFKRbllVjT3kZKIeD5I9iv6F6u/gpuxcYqiF0Fss=",
+    "last_login": "2022-09-26T08:42:47.941Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-09-26T07:29:23.913Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "market",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "market",
+    "model": "product"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m694v13vthdrchzd8k4oczz2ivt1b4wq",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGll2lHUSSnrOEO3POIBsKU4qxN3BUgpoppj3Zl5mxn1L8151nRcxZ-PN6bcj5IfmBuSO-VYsl7ytC9mm2INWey2iz8vh_h0krOm7higM3nU9KI0TChN5DUwicZgUPAENPnrshDBKH2KLkR07FYQQzfsDIbI51w:1ocjhP:X_S377jqDFBYi129l_weIai4WM-1yhyMmvygq-SpX6k",
+    "expire_date": "2022-10-10T08:42:47.945Z"
+  }
+},
+{
+  "model": "market.category",
+  "pk": 3,
+  "fields": {
+    "category_name": "продукты питания",
+    "category_description": "различные продукты питания",
+    "state": "ACTIVE",
+    "created_at": "2022-09-26T08:50:14.893Z",
+    "changed_at": "2022-09-26T08:50:14.893Z"
+  }
+},
+{
+  "model": "market.category",
+  "pk": 4,
+  "fields": {
+    "category_name": "техника",
+    "category_description": "различная бытовая техника",
+    "state": "ACTIVE",
+    "created_at": "2022-09-26T08:50:32.014Z",
+    "changed_at": "2022-09-26T08:50:32.014Z"
+  }
+},
+{
+  "model": "market.category",
+  "pk": 5,
+  "fields": {
+    "category_name": "сад и огород",
+    "category_description": "товары для сада и огорода",
+    "state": "NOT_ACTIVE",
+    "created_at": "2022-09-26T12:53:28.161Z",
+    "changed_at": "2022-09-26T12:53:28.161Z"
+  }
+},
+{
+  "model": "market.category",
+  "pk": 6,
+  "fields": {
+    "category_name": "транспорт",
+    "category_description": "автотранспорт",
+    "state": "NOT_ACTIVE",
+    "created_at": "2022-09-26T12:58:20.266Z",
+    "changed_at": "2022-09-26T12:58:20.266Z"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 1,
+  "fields": {
+    "product_name": "Батон нарезной",
+    "product_description": "Хлеб — хлебобулочное изделие, получаемое путём выпекания теста (состоящего как минимум из муки и воды), разрыхлённого дрожжами или закваской. Согласно российскому ГОСТу, к хлебу относят хлебобулочные изделия с массой более 500 г с влажностью не менее 19 % (по терминологии ГОСТ 32677-2014).",
+    "category": 3,
+    "created_at": "2022-09-26T10:08:50.922Z",
+    "changed_at": "2022-09-26T10:08:50.922Z",
+    "price": "100.0000000000",
+    "product_image": "https://klike.net/uploads/posts/2020-09/1601201612_2.jpg"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 8,
+  "fields": {
+    "product_name": "Молоко \"Простоквашино\"",
+    "product_description": "Молоко́ — питательная жидкость, вырабатываемая молочными железами самок млекопитающих во время лактации. Естественное назначение молока — вскармливание потомства (в том числе и у человека), которое ещё не способно переваривать другую пищу.",
+    "category": 3,
+    "created_at": "2022-09-26T11:44:29.770Z",
+    "changed_at": "2022-09-26T11:44:29.770Z",
+    "price": "205.0000000000",
+    "product_image": "https://vostok-moloko.kz/assets/template/files/images/katalog/moloko/moloko-4-peht.jpg"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 9,
+  "fields": {
+    "product_name": "Телевизор Artel TV LED UA43H1400",
+    "product_description": "Шире - больше\r\nИграйте как никогда прежде — экран VA с диагональю 43 дюйма точно придется вам по вкусу. Благодаря широкому углу обзора и великолепному разрешению у вас захватит дух от сцен эпичных баталий. Даже на таком большом экране детали остаются четкими, а цвета передаются с максимальной точностью благодаря высокому разрешению.\r\n\r\nМаксимальное погружение\r\nПолностью погрузитесь в мир игры с реалистичным изображением, которое достигается благодаря изгибу экрана. Монитор с соотношением сторон 32:10 создает ощущение просмотра в кинотеатре. А благодаря дизайну с узкой рамкой вы получаете еще больше экранного пространства.",
+    "category": 4,
+    "created_at": "2022-09-26T11:46:25.747Z",
+    "changed_at": "2022-09-26T11:46:25.747Z",
+    "price": "5000.0000000000",
+    "product_image": "https://object.pscloud.io/cms/cms/Photo/img_0_95_1687_0.jpg"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 11,
+  "fields": {
+    "product_name": "Холодильник Samsung RF-65A93T0SR",
+    "product_description": "В уникальном Инверторном Линейном компрессоре от LG вместо обычного привода возвратно-поступательного движения используется линейный поршневой привод. Это сокращает внутреннее трение и снижает уровень энергопотребления примерно на 32%. На Инверторный Линейный компрессор от LG также распространяется гарантия на 10 лет.",
+    "category": 4,
+    "created_at": "2022-09-26T11:52:02.397Z",
+    "changed_at": "2022-09-26T11:52:02.397Z",
+    "price": "35000.0000000000",
+    "product_image": "https://object.pscloud.io/cms/cms/Photo/img_0_25_457_0_6.png"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 12,
+  "fields": {
+    "product_name": "Пылесос Samsung VCC4520S36, Blue",
+    "product_description": "В пылесосах Samsung используется система фильтрации HEРA, благодаря которой во время уборки из пылесоса выходит совершенно чистый воздух.\r\n\r\nУлавливая пыль и другие аллергены, такие как пыльца и плесень, фильтры HEPA делают воздух в помещении более чистым и безопасным для здоровья.\r\n\r\nКроме того, эффективность очистки выдуваемого пылесосом воздуха и снижение уровня вредных выбросов, достигнутые благодаря использованию фильтров HEPA, подтверждены сертификатами немецкого института тестирования и сертификации SLG.",
+    "category": 4,
+    "created_at": "2022-09-26T12:47:08.768Z",
+    "changed_at": "2022-09-26T12:47:08.768Z",
+    "price": "30000.0000000000",
+    "product_image": "https://object.pscloud.io/cms/cms/Photo/img_0_24_498_0_1.jpg"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 13,
+  "fields": {
+    "product_name": "Лопата",
+    "product_description": "лопата совковая",
+    "category": 5,
+    "created_at": "2022-09-26T12:56:59.326Z",
+    "changed_at": "2022-09-26T12:56:59.326Z",
+    "price": "2000.0000000000",
+    "product_image": "https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/9/2/928884.jpg"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 14,
+  "fields": {
+    "product_name": "автомобиль",
+    "product_description": "автомобиль kia",
+    "category": 6,
+    "created_at": "2022-09-26T12:59:19.203Z",
+    "changed_at": "2022-09-26T12:59:19.203Z",
+    "price": "3000.0000000000",
+    "product_image": "https://avtomir.ru/upload/uf/483/4837a5c47ce4a5973ef206db01e03cf3.png"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 15,
+  "fields": {
+    "product_name": "Ведро",
+    "product_description": "Ведро оцинкованное",
+    "category": 5,
+    "created_at": "2022-09-26T13:22:51.898Z",
+    "changed_at": "2022-09-26T13:22:51.898Z",
+    "price": "200.0000000000",
+    "product_image": "https://images.satu.kz/8815699_w640_h640_vedro-otsinkovannoe-12.jpg"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 17,
+  "fields": {
+    "product_name": "Горшок",
+    "product_description": "горшок цветочный",
+    "category": 5,
+    "created_at": "2022-09-26T15:58:25.920Z",
+    "changed_at": "2022-09-26T15:58:25.920Z",
+    "price": "2000.0000000000",
+    "product_image": "data:image/jpeg;base64,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"
+  }
+}
+]
