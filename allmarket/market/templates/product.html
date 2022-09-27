@@ -1,3 +1,41 @@
+{#{% extends 'base.html' %}#}
+{#{% block title %}#}
+{#    Product: {{ product.product_name }}#}
+{#{% endblock %}#}
+{#{% block menu %}#}
+{#{% endblock %}#}
+{#{% block content %}#}
+{#    <div class="container">#}
+{#        <div class="box">#}
+{#            <div class="card">#}
+{#                <div class="row justify-content-center text-center">#}
+{#                    <div class="col-3 text-center">#}
+{#                        <img class="card-img-left" src="{{ product.product_image }}" alt="Card image cap">#}
+{#                    </div>#}
+{#                <div class="card-body">#}
+{##}
+{##}
+{#                    <h5 class="card-title">{{ product.product_name }}</h5>#}
+{#                    <p class="card-text">{{ product.category.category_name }}</p>#}
+{#                    <p class="card-text">{{ product.price | floatformat:-2 }} $</p>#}
+{#                    <p class="card-text">{{ product.product_description }}</p>#}
+{#                    <span class="added">added:{{ product.created_at |date:'Y/m/d h:m' }}</span>#}
+{#                </div>#}
+{#            </div>#}
+{#                <div class="row justify-content-center text-center">#}
+{#                    <div class="col-4 text-center">#}
+{#                        <a href="{% url 'product_delete' product.pk %}"><button type="submit" class="btn btn-secondary btn-block">Удалить</button></a>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-4 text-center">#}
+{#                        <a href="{% url 'product_edit' product.pk %}"><button type="submit" class="btn btn-secondary btn-block">Редактировать</button></a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </form>#}
+{#        </div>#}
+
+
+
 {% extends 'base.html' %}
 {% block title %}
     Product: {{ product.product_name }}
@@ -7,17 +45,28 @@
 {% block content %}
     <div class="container">
         <div class="box">
-            <div class="card">
-                <img class="card-img-left" src="{{ product.product_image }}" alt="Card image cap">
-                <div class="card-body">
+            <div class="row justify-content-center ">
+                <div class="col-5 text-center">
+                    <img class="product_card" src="{{ product.product_image }}" alt="Card image cap">
+                </div>
+                <div class="col-5 card_desc">
                     <h5 class="card-title">{{ product.product_name }}</h5>
                     <p class="card-text">{{ product.category.category_name }}</p>
-                    <p class="card-text">{{ product.price }}</p>
-                    <span class="added">added:{{ product.created_at |date:'Y/m/d h:m' }}</span>
+                    <p class="card-price">Цена: {{ product.price | floatformat:-2 }} $</p>
+                    <p class="card-description">{{ product.product_description }}</p>
+                    <span class="added">добавлено: {{ product.created_at |date:'Y/m/d h:m' }}</span>
+                    <div class="row justify-content-center space-between">
+                        <div class="col-5">
+                            <a href="{% url 'product_delete' product.pk %}"><button type="submit" class="btn btn-secondary btn-block">Удалить</button></a>
+                        </div>
+
+                        <div class="col-6 text-center">
+                            <a href="{% url 'product_edit' product.pk %}"><button type="submit" class="btn btn-secondary btn-block">Редактировать</button></a>
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
 
-        </div>
     </div>
 {% endblock %}

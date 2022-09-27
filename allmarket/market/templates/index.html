@@ -7,18 +7,20 @@
 
     <div class="row row-cols-2 row-cols-lg-2 g-2 g-lg-3 justify-content-center">
         {% for product in products %}
+            {% if product.category.state == 'ACTIVE' %}
             <div class="col between-space">
               <div class="p-3 border bg-light center-block">
                   <img class="card-img-top" src="{{ product.product_image }}" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">{{ product.product_name }}</h5>
                     <p>{{ product.category.category_name }}</p>
-                    <p class="card-text">Стоимость: {{ product.price }}</p>
+                    <p class="product-price">Цена: {{ product.price | floatformat:-2 }} $</p>
                     <div class="card-footer">
                         <a href="{% url 'product_detail' product.pk %}">узнать подробнее >>> </a>
                     </div>
                   </div>
               </div>
+            {% endif %}
             </div>
         {% endfor %}
     </div>

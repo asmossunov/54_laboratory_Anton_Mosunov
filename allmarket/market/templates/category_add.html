@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block menu %}
-
 {% endblock %}
 
 {% block title %}
@@ -12,10 +11,10 @@
 
            <form action="{% url 'category_add' %}" method="POST">
                 {% csrf_token%}
-
-                <div class="row text justify-content-center">
+                <p class="descript text-center">Добавьте категорию:</p>
+                <div class="row  justify-content-center">
                     <div class="col-5 text-center">
-                        <p class="descript">Добавьте категорию:</p>
+
                         <input name="category_name" class="form-control id="category_name" placeholder="название категории">
                          <textarea class="form-control" name="category_description" id="exampleFormControlTextarea1" rows="5" placeholder="описание"></textarea>
                     </div>
