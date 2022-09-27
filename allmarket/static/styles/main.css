@@ -1,16 +1,51 @@
 * body{
     background-image: url('../fon_images/business_fon.jpg');
-    font-family: 'Montserrat', sans-serif;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
 }
 .card-img-top{
-    width: 400px;
+    max-width: 400px;
     height: 350px;
     display: block;
     margin: auto;
 }
+
+.row{
+    margin-top: 100px;
+}
+
+.card-title{
+    font-size: 35px;
+    color: #3f636c;
+}
+
+.product-price{
+    font-size: 25px;
+    color: #b3863f;
+}
+
+.card-price{
+    padding-top: 20px;
+    font-size: 35px;
+    color: #b3863f;
+}
+
+.card-description{
+    font-family: Arial;
+    font-size: 20px;
+    color: #3f636c;
+}
+.product_card{
+    margin-top: 40px;
+    width: 100%;
+    height: 70%;
+}
+
+.card_desc{
+    margin-top: 50px;
+}
+
 .p-3{
     border-radius: 10px;
 }
@@ -24,6 +59,7 @@
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
+
 .main-title-home{
 	background: #2b3f44;
 	background: -webkit-linear-gradient(to bottom, #2b3f44 28%, #6da8b8 70%);
@@ -35,7 +71,11 @@
     margin-top: 130px;
     font-size: 100px;
 }
-
+.text{
+    /*-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);*/
+	/*-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);*/
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
 .about-game{
     margin-bottom: 80px;
     font-size: 25px;
@@ -69,13 +109,13 @@
 
 .btn{
     font-size: 25px;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     padding: 0.7rem 2.5rem;
     border-radius: 2.25rem;
 }
 .text-break{
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 30px;
     color: grey;
 }
@@ -83,6 +123,10 @@
     margin-top: 60px;
     font-size: 30px;
     color: grey;
+}
+.category-name{
+    font-size: 30px;
+    padding-top: 70px;
 }
 
 .descript{
@@ -183,6 +227,9 @@ body {
     margin-bottom: 100px;
 }
 
+.a.navbar-link{
+    padding-left: 60px;
+}
 .menu {
     font-size: 14px;
     line-height: 1;
