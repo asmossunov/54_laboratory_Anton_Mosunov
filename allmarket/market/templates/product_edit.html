@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+{% endblock %}
+
+{% block title %}
+    Редактирование товара
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="box">
+            <div class="head_text heading text-center">
+                <p class="descript">редактирование товара</p>
+            </div>
+
+            <form action="{% url 'product_edit' product.pk %}" method="POST">
+            {% csrf_token%}
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-7 form-check-input-without-block text-center">
+                        <label class="descript-label" for="category_name">название товара</label>
+                        <input type="text" value="{{ product.product_name }}" name="product_name" class="form-control id="product_name">
+                    </div>
+
+                    <div class="col-7 form-check-input-without-block text-center">
+                        <label class="descript-label" for="category_name">стоимость товара</label>
+                        <input type="text" value="{{ product.price | floatformat:-2 }}" name="price" class="form-control id="price">
+                    </div>
+
+                    <div class="col-7 form-check-input-without-block text-center">
+                        <label class="descript-label" for="category_name">изображение товара</label>
+                        <input type="text" value="{{ product.product_image }}" name="product_image" class="form-control id="product_image">
+                    </div>
+
+                    <div class="col-7 text-center">
+                    <label class="descript-label" for="category_name">категория товара</label>
+                        <select name="category" class="form-control">
+                        {% for category in categories %}
+                            {% if category.category_name == product.category.category_name %}
+                                <option selected value="{{product.category.category_name}}" >{{product.category.category_name}}</option>
+                            {% endif %}
+                            {% if category.state == 'ACTIVE' and category.category_name != product.category.category_name %}
+                                <option value="{{category.category_name}}">{{category.category_name}}</option>
+                            {% endif %}
+                        {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="col-7 form-check-input-without-block text-center">
+                        <label class="descript-label" for="category_description">описание</label>
+                        <textarea class="form-control" name="product_description" id="product_description" rows="5">{{ product.product_description }}</textarea>
+                    </div>
+
+                    <div class="col-7 text-center">
+                        <button type="submit" class="btn btn-secondary btn-block">Изменить</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+{% endblock %}
