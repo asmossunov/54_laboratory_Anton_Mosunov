@@ -7,9 +7,6 @@ class StateChoices(TextChoices):
     NOT_ACTIVE = 'NOT_ACTIVE'
 
 
-# categories = ['продукты питания', 'бытовая техника', 'сад и огород']
-
-
 class Category(models.Model):
     category_name = models.CharField(verbose_name='Название', max_length=100, null=False)
     category_description = models.TextField(verbose_name='Описание категории',
