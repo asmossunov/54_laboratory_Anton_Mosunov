@@ -27,6 +27,15 @@ def delete_product(request, pk):
         return redirect('index')
 
 
+def category_view(request, pk):
+    if request.method == 'GET':
+        category = Category.objects.get(pk=pk)
+        context = {
+            'category': category
+        }
+        return render(request, 'category_detail.html', context)
+
+
 def add_category_view(request):
     if request.method == 'GET':
         return render(request, 'category_add.html')
@@ -39,7 +48,7 @@ def added_category_prepare(request):
         category_name=request.POST.get("category_name"),
         category_description=request.POST.get("category_description")
     )
-    return redirect('index')
+    return redirect(reverse('category_detail', kwargs={'pk': category.pk}))
 
 
 def add_product_view(request):
